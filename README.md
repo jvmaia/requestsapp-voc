@@ -16,3 +16,7 @@ Install the Python development requirements:
 Build and run the app:
 
     python setup.py android --start
+
+Add this line in AndroidManifest.xml generated ```<uses-permission android:name="android.permission.INTERNET" />```
+
+![App screenshot](screenshot.jpg)

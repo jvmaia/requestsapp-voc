@@ -13,10 +13,14 @@ Install the Python development requirements:
 
 [Plug in your Android device](https://developer.android.com/training/basics/firstapp/running-app.html) or [start an emulator](https://developer.android.com/studio/run/emulator-commandline.html).
 
-Build and run the app:
+Build the app:
 
-    python setup.py android --start
+    python setup.py android
 
 Add this line in AndroidManifest.xml generated ```<uses-permission android:name="android.permission.INTERNET" />```
+
+Run the app:
+    
+    cd android && ./gradlew run
 
 ![App screenshot](screenshot.jpg)

@@ -66,7 +66,7 @@ class MainApp:
     def send_request(self):
         self.result.setText('Loading request')
         url = str(self.entrytext.getText())
-        stringRequest = toolbox.StringRequest(Request.Method.GET, url, OnResponse(self.listener), OnError(self.listener_error))
+        stringRequest = toolbox.StringRequest(url, OnResponse(self.listener), OnError(self.listener_error))
         self.queue.add(stringRequest)
 
 def main():

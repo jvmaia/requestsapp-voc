@@ -1,7 +1,5 @@
 import android
 from android.widget import Button, LinearLayout, RelativeLayout, TextView, EditText
-from com.android.volley import Request
-from com.android.volley import Response
 from com.android.volley import toolbox
 from com.android.volley.toolbox import Volley
 

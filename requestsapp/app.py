@@ -56,7 +56,7 @@ class MainApp:
 
     def listener(self, response):
         response = str(response)
-        self.result.setText("Response is: " + response[0:501])
+        self.result.setText("Response is: " + response[0:200])
 
     def listener_error(self, error):
         self.result.setText('Request failed, error: ' + error.getMessage())
@@ -64,7 +64,11 @@ class MainApp:
     def send_request(self):
         self.result.setText('Loading request')
         url = str(self.entrytext.getText())
-        stringRequest = toolbox.StringRequest(url, OnResponse(self.listener), OnError(self.listener_error))
+        stringRequest = toolbox.StringRequest(
+            url,
+            OnResponse(self.listener),
+            OnError(self.listener_error)
+            )
         self.queue.add(stringRequest)
 
 def main():

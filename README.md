@@ -17,7 +17,18 @@ Build the app:
 
     python setup.py android
 
-Add this line in AndroidManifest.xml generated ```<uses-permission android:name="android.permission.INTERNET" />```
+Add this line in AndroidManifest.xml generated
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+```
+Add this lines in build.gradle generate, in the dependencies section:
+```xml
+repositories {
+        jcenter()
+    }
+    ...
+    compile 'com.android.volley:volley:1.1.0'
+```
 
 Run the app:
     
